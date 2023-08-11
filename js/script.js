@@ -76,12 +76,12 @@ async function getUserInfo() {
 
     const data = await response.json();
 
-    ipAddressElement.textContent = `IP Address: ${data.ip}`;
-    userLocationElement.textContent = `Location: ${data.city}, ${data.region}, ${data.country}`;
+    ipAddressElement.textContent = `Your IP Address: ${data.ip}`;
+    userLocationElement.textContent = `Your Location: ${data.city}, ${data.region}, ${data.country}`;
   } catch (error) {
     console.error('Error fetching user info:', error);
-    ipAddressElement.textContent = 'IP Address: Error';
-    userLocationElement.textContent = 'Location: Error';
+    ipAddressElement.textContent = 'Your IP Address: Error';
+    userLocationElement.textContent = 'Your Location: Error';
   }
 }
 
