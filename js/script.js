@@ -69,7 +69,7 @@ function updateDateTime() {
 // Function to fetch and display user's IP address and location
 async function getUserInfo() {
   try {
-    const response = await fetch('https://ipinfo.io/43.230.184.59?token=2d9d8dd4afcfe7');
+    const response = await fetch('https://ipinfo.io/?token=2d9d8dd4afcfe7');
     if (!response.ok) {
       throw new Error('Failed to fetch IP information');
     }
